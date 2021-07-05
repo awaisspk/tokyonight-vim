@@ -163,7 +163,7 @@ if s:configuration.transparent_background
   call s:HL('EndOfBuffer', s:palette.bg0, s:palette.none)
   call s:HL('FoldColumn', s:palette.grey, s:palette.none)
   call s:HL('Folded', s:palette.grey, s:palette.none)
-  call s:HL('SignColumn', s:palette.fg, s:palette.none)
+  call s:HL('SignColumn', s:palette.fg, s:palette.bg0)
   call s:HL('ToolbarLine', s:palette.fg, s:palette.none)
 else
   call s:HL('Normal', s:palette.fg, s:palette.bg0)
@@ -171,7 +171,7 @@ else
   call s:HL('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   call s:HL('FoldColumn', s:palette.grey, s:palette.bg1)
   call s:HL('Folded', s:palette.grey, s:palette.bg1)
-  call s:HL('SignColumn', s:palette.fg, s:palette.bg1)
+  call s:HL('SignColumn', s:palette.fg, s:palette.bg0)
   call s:HL('ToolbarLine', s:palette.fg, s:palette.bg2)
 endif
 call s:HL('ColorColumn', s:palette.none, s:palette.bg1)
