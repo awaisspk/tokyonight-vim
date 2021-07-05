@@ -1629,9 +1629,9 @@ if s:configuration.transparent_background
   call s:HL('GitGutterChangeDelete', s:palette.purple, s:palette.none)
 else
   call s:HL('GitGutterAdd', s:palette.green, s:palette.bg0)
-  call s:HL('GitGutterChange', s:palette.blue, s:palette.bg1)
-  call s:HL('GitGutterDelete', s:palette.red, s:palette.bg1)
-  call s:HL('GitGutterChangeDelete', s:palette.purple, s:palette.bg1)
+  call s:HL('GitGutterChange', s:palette.blue, s:palette.bg0)
+  call s:HL('GitGutterDelete', s:palette.red, s:palette.bg0)
+  call s:HL('GitGutterChangeDelete', s:palette.purple, s:palette.bg0)
 endif
 " }}}
 " mhinz/vim-signify{{{
