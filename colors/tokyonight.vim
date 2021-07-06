@@ -230,10 +230,28 @@ call s:HL('SpellBad', s:palette.red, s:palette.none, 'undercurl', s:palette.red)
 call s:HL('SpellCap', s:palette.yellow, s:palette.none, 'undercurl', s:palette.yellow)
 call s:HL('SpellLocal', s:palette.blue, s:palette.none, 'undercurl', s:palette.blue)
 call s:HL('SpellRare', s:palette.purple, s:palette.none, 'undercurl', s:palette.purple)
-call s:HL('StatusLine', s:palette.fg, s:palette.bg3)
-call s:HL('StatusLineTerm', s:palette.fg, s:palette.bg3)
-call s:HL('StatusLineNC', s:palette.grey, s:palette.bg1)
-call s:HL('StatusLineTermNC', s:palette.grey, s:palette.bg1)
+
+highlight StatusLineLspDiagnosticsHint guifg=#4DC1FF guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineGitChange guifg=#5486C0 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineGit guifg=#C67158 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineGitAdd guifg=#87B479 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineLspDiagnosticsInformation guifg=#FFCC66 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineNC guifg=#C7C8C0 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineLspDiagnosticsError guifg=#F44848 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineGitDelete guifg=#AF4B57 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLine guifg=#C7C8D1 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineSeparator guifg=NONE guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineTreeSitter guifg=#87B479 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight StatusLineLspDiagnosticsWarning guifg=#FF8800 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+
+
+highlight WhichKeyGroup guifg=#5486C0 guibg=NONE guisp=NONE gui=NONE blend=NONE
+highlight WhichKeyFloat guifg=NONE guibg=#232433 guisp=#232433 gui=NONE blend=NONE
+highlight WhichKeyDesc guifg=#64A6C4 guibg=NONE guisp=NONE gui=NONE blend=NONE
+highlight WhichKey guifg=#BF85C1 guibg=NONE guisp=NONE gui=NONE blend=NONE
+highlight WhichKeySeperator guifg=#87B479 guibg=NONE guisp=NONE gui=NONE blend=NONE
+highlight FloatBorder guifg=#858585 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+
 call s:HL('TabLine', s:palette.fg, s:palette.bg4)
 call s:HL('TabLineFill', s:palette.grey, s:palette.bg1)
 call s:HL('TabLineSel', s:palette.bg0, s:palette.bg_red)
@@ -1743,12 +1761,7 @@ highlight! link BufTabLineActive TabLine
 highlight! link BufTabLineHidden TabLineFill
 highlight! link BufTabLineFill TabLineFill
 " }}}
-" liuchengxu/vim-which-key{{{
-highlight! link WhichKey Red
-highlight! link WhichKeySeperator Green
-highlight! link WhichKeyGroup Orange
-highlight! link WhichKeyDesc Blue
-" }}}
+
 " skywind3000/quickmenu.vim{{{
 highlight! link QuickmenuOption Green
 highlight! link QuickmenuNumber Orange
