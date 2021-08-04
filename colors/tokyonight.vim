@@ -160,7 +160,7 @@ endif
 if s:configuration.transparent_background
   call s:HL('Normal', s:palette.fg, s:palette.none)
   call s:HL('Terminal', s:palette.fg, s:palette.none)
-  call s:HL('EndOfBuffer', s:palette.bg0, s:palette.none)
+  " call s:HL('EndOfBuffer', s:palette.bg0, s:palette.none)
   call s:HL('FoldColumn', s:palette.grey, s:palette.none)
   call s:HL('Folded', s:palette.grey, s:palette.none)
   call s:HL('SignColumn', s:palette.fg, s:palette.bg0)
@@ -168,7 +168,7 @@ if s:configuration.transparent_background
 else
   call s:HL('Normal', s:palette.fg, s:palette.bg0)
   call s:HL('Terminal', s:palette.fg, s:palette.bg0)
-  call s:HL('EndOfBuffer', s:palette.bg0, s:palette.bg0)
+  " call s:HL('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   call s:HL('FoldColumn', s:palette.grey, s:palette.bg1)
   call s:HL('Folded', s:palette.grey, s:palette.bg1)
   call s:HL('SignColumn', s:palette.fg, s:palette.bg0)
@@ -209,7 +209,7 @@ call s:HL('MoreMsg', s:palette.blue, s:palette.none, 'bold')
 call s:HL('IncSearch', s:palette.bg0, s:palette.bg_red)
 call s:HL('Search', s:palette.bg0, s:palette.bg_green)
 call s:HL('MatchParen', s:palette.none, s:palette.bg4)
-call s:HL('NonText', s:palette.bg4, s:palette.none)
+call s:HL('NonText', s:palette.bg1, s:palette.none)
 call s:HL('Whitespace', s:palette.bg4, s:palette.none)
 call s:HL('SpecialKey', s:palette.bg4, s:palette.none)
 call s:HL('Pmenu', s:palette.fg, s:palette.bg2)
@@ -243,7 +243,25 @@ highlight StatusLine guifg=#C7C8D1 guibg=#232433 guisp=NONE gui=NONE blend=NONE
 highlight StatusLineSeparator guifg=NONE guibg=#232433 guisp=NONE gui=NONE blend=NONE
 highlight StatusLineTreeSitter guifg=#87B479 guibg=#232433 guisp=NONE gui=NONE blend=NONE
 highlight StatusLineLspDiagnosticsWarning guifg=#FF8800 guibg=#232433 guisp=NONE gui=NONE blend=NONE
+highlight NvimTreeNormal guifg=#C7C8D1  guibg=#2a2b3d
+highlight NvimTreeVertSplit guifg=#2a2b3d guibg=#2a2b3d
+highlight NvimTreeIndentMarker guifg=#2a2b3d guibg=#2a2b3d
+" highlight EndOfBuffer guibg=#2a2b3d
 
+" highlight  NvimTreeFolderIcon 
+" highlight	 NvimTreeFolderName 
+" highlight	 NvimTreeOpenedFolderName 
+" highlight	 NvimTreeImageFile 
+" highlight	 NvimTreeSpecialFile 
+" highlight	 NvimTreeGitStaged 
+" highlight	 NvimTreeGitNew 
+" highlight	 NvimTreeGitDirty 
+" highlight	 NvimTreeGitDeleted 
+" highlight	 NvimTreeGitMerge 
+" highlight	 NvimTreeGitRenamed 
+" highlight	 NvimTreeSymlink 
+" highlight	 NvimTreeRootFolder 
+" highlight	 NvimTreeExecFile 
 
 highlight WhichKeyGroup guifg=#5486C0 guibg=NONE guisp=NONE gui=NONE blend=NONE
 highlight WhichKeyFloat guifg=NONE guibg=#232433 guisp=#232433 gui=NONE blend=NONE
